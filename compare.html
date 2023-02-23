@@ -1,0 +1,31 @@
+<html>
+    <script>
+        function compare(){
+            let A=parseInt(txt1.value)
+            if (A==100){
+                alert("it is exactly 100")
+            }
+        }
+
+    function addition(){
+        if(txt1.value==""){
+            alert("First num is missing")
+            txt1.focus()
+        } else{
+            if(txt2.value==""){
+                alert("Second num empty")
+                txt2.focus();
+            } else {
+                txt3.value=parseInt(txt1.value)+parseInt(txt2.value)
+            }
+        }
+    }
+     </script>   
+    <input type="text" id="txt1">
+    <input type="text" id="txt2">
+    <br>
+    <input type="button" value="ADD" onclick="addition()">
+    <br>
+    <input type="text" id="txt3">
+    <input type="button" value="Compare" onclick="compare()">
+</html>

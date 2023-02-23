@@ -1,0 +1,44 @@
+<html>
+
+<head>
+
+    <link rel ="stylesheet" href="mystyles.css">
+    <script>
+        function button1(){
+	alert ("HELLO THERE")
+        }
+
+        function button2(){
+	alert ("YOU HOVERED OVER ME!")
+        }
+
+        function change(){
+            message1.value="New message";
+        }
+    </script>
+</head>
+
+<body>
+<center>
+    <h1>
+       <font color="green">Welcome to my website.</font>
+    </h1>
+
+</center>
+<br>
+<br>
+
+<input type="button" value="Click me" onclick="button1()">
+<br>
+<input type="button" value="Hover me" onmousemove="button2()">
+<br>
+<input type="button" value="Change" onclick="change()">
+<br>
+<br>
+<output id="message1">Message to be changed</output>
+<br>
+<br>
+<br>
+<a href="trainers.html">Trainers</a>
+</body>
+</html>

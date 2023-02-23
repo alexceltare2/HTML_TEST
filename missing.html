@@ -1,0 +1,31 @@
+<style>
+    span{
+        color:red
+    }
+</style>
+
+<script>
+    function addition(){
+if(txt1.value==""){
+    mess1.innerHTML="FIrst is missing"
+} else {
+    mess1.innerHTML=""
+}
+if (txt2.value==""){
+    mess2.innerHTML="Second is missing"
+} else {
+    mess2.innerHTML=""
+}
+}
+
+</script>
+
+
+<html>
+    <input type="text" id="txt1"><span id="mess1"></span><br>
+    <input type="text" id="txt2"><span id="mess2"></span><br>
+    <br>
+    <input type="button" value="ADD" onclick="addition()">
+    <br>
+    <input type="text" id="txt3">
+</html>
